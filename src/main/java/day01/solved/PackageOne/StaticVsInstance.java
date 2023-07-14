@@ -27,6 +27,7 @@ class StaticVariableDemo {
 	}
 }
 
+
 class InstanceVariableDemo {
 	// Declare an instance variable
 	public int instanceVariable = 5;

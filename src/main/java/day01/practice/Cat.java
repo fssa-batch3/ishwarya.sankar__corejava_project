@@ -30,7 +30,7 @@ public class Cat {
 	    }
 
 		public void speak() {
-	        System.out.println("Speaks: Woof!");
+	        System.out.println("Speaks: oww!");
 	    }
 
 	    // Main method to create Cat objects
@@ -38,6 +38,7 @@ public class Cat {
 	        // Create two Cat objects
 	        Cat Cat1 = new Cat(4, "White");
 	        Cat Cat2 = new Cat(3, "Black");
+	        Cat Cat3 = new Cat (6,"Red");
 
 	        // Print the attributes of each Cat
 	        System.out.println("Cat 1:");
@@ -46,8 +47,8 @@ public class Cat {
 			Cat1.speak();
 
 	        System.out.println("Cat 2:");
-	        System.out.println("Age: " + Cat2.age());
-	        System.out.println("Color: " + Cat2.getColor());
+	        System.out.println("Age: " + Cat3.age());
+	        System.out.println("Color: " + Cat3.getColor());
 			Cat1.speak();
 	    }
 }
