@@ -33,8 +33,8 @@ class Student {
 }
 public class Main {
     public static void main(String[] args) {
-        Department department = new Department("Physics", 983);
-        Student student = new Student("Kishor", 786, department);
+        Department department = new Department("Physics", 9990);
+        Student student = new Student("ishu", 112, department);
         System.out.println(student);
     }
 }
