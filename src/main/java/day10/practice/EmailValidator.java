@@ -3,6 +3,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class EmailValidator {
+	public static boolean isValidEmail(String emailId) throws InvalidEmailException {
 
 
 	  public static boolean validateEmail(String email) {

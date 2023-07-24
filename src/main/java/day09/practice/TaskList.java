@@ -11,10 +11,10 @@ class Task implements Comparable<Task> {
     private String name;
     private String deadline;
 
-    public Task(int id, String name, String deadline) {
+    public Task(int id, String name, LocalDate date1) {
         this.id = id;
         this.name = name;
-        this.deadline = deadline;
+        this.deadline = date1;
     }
 
     public int getId() {

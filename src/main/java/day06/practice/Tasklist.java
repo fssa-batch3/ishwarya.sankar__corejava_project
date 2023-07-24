@@ -3,14 +3,19 @@ package day06.practice;
 import java.util.List;
 //import java.util.ArrayList;
 
-public class ArrayList {
+public class Tasklist {
 
-	  public String taskName;
-	    public int priority;
+	  private String taskName;
+	    private int priority;
 	    
-	     public ArrayList(String taskName , int priority) {
+	     public Tasklist(String name,int n) {
+	    	 this.taskName = name;
+	    	 this.priority = n;
+	     }
+	     
+	     public Tasklist(String taskName ) {
 	    	 this.taskName = taskName;
-	    	 this.priority = priority;
+	    
 	     }
 	     public void setTaskName(String taskName) {
 	    	 this.taskName = taskName;
