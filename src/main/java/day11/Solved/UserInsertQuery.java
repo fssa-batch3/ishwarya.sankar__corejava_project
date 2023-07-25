@@ -1,12 +1,12 @@
 package day11.Solved;
+
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
+
 public class UserInsertQuery {
 
-	public static int createUser(String username, String email, String password) throws SQLException {
+	public static void main(String[] args) throws Exception {
+
 		// Step 01: Get connection
 		Connection connection = ConnectionUtil.getConnection();
 		System.out.println(connection);
@@ -15,17 +15,13 @@ public class UserInsertQuery {
 		Statement stmt = connection.createStatement();
 
 		// Step 03: Execute Insert Query
-		String query = "INSERT INTO user (username, email, password) VALUES (?, ?, ?)";
-		PreparedStatement pst = connection.prepareStatement(query);
-		pst.setString(1, username);
-		pst.setString(2, email);
-		pst.setString(3, password);
-		int rows = pst.executeUpdate(query);
+		String query = "INSERT INTO user (username, email, password) VALUES (\"Ishwarya\",\"ishusankar14@gmail.com\", \"password007\")";
+		int rows = stmt.executeUpdate(query);
 		System.out.println("No of rows inserted :" + rows);
 
 		// Step 04: close the connection resources
 		ConnectionUtil.close(connection, stmt, null);
 
-		return rows;
 	}
+
 }

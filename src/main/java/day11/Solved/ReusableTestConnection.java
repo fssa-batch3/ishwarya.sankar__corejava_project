@@ -1,8 +1,11 @@
 package day11.Solved;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+
 public class ReusableTestConnection {
+
 	public static void main(String[] args) throws SQLException {
 
 		Connection connection = ReusableTestConnection.getConnection();
@@ -24,4 +27,5 @@ public class ReusableTestConnection {
 		}
 		return connection;
 	}
+
 }

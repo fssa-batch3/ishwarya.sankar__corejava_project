@@ -1,12 +1,13 @@
 package day11.Solved;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.Statement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class ConnectionUtil {
+import com.mysql.cj.xdevapi.Statement;
 
+public class ConnectionUtil {
 	public static Connection getConnection() throws SQLException {
 
 		Connection con = null;
@@ -19,7 +20,7 @@ public class ConnectionUtil {
 		return con;
 	}
 
-	public static void close(Connection conn, Statement stmt, ResultSet rs) {
+	public static void close(Connection conn, java.sql.Statement stmt, ResultSet rs) {
 
 		try {
 			if (rs != null) {
@@ -33,7 +34,6 @@ public class ConnectionUtil {
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
-			// No need re throw the exception.
 		}
 	}
 }
