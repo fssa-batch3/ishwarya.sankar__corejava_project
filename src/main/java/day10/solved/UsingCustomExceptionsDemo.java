@@ -64,7 +64,7 @@ class TaskValidator {
 public class UsingCustomExceptionsDemo {
 	public static void main(String[] args) {
 		Task task = new Task();
-//		task.setName("Creating test case"); Commenting this so that exception is thrown
+	task.setName("Creating test case");
 		
 		try {
 			TaskValidator.validate(task);

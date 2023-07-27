@@ -20,9 +20,10 @@ public class TaskDAO {
 			stmt.setString(2,task.getTaskName());
 			stmt.setString(3, task.getStatus());
 			
-			stmt.executeUpdate();
+			int rows = stmt.executeUpdate();
+			System.out.println("No of rows updated" + rows);
 
-	        
+	     
 			// Hint: Set the values for the PreparedStatement using task properties
 
 			// Hint: Execute the update statement
