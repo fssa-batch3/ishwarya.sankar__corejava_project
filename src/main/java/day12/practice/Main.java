@@ -6,7 +6,7 @@ public class Main {
 
 		Task task1 = new Task(18,"CompletedTask","Completed");
 		Task task2 = new Task(12,"Reading Books","Pending");
-		Task task3 = new Task(10,"Dance","Completed");
+		Task task3 = new Task(10,"risksla","Completed");
 		
 		TaskDAO tsk1 = new TaskDAO();
 		TaskDAO tsk2 = new TaskDAO();
